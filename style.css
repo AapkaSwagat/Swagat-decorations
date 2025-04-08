@@ -6,6 +6,20 @@ body {
   color: #333;
 }
 
+.hero h1 {
+  font-size: 3rem;
+  color: #ff1a1a;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #fffacd;
+  margin-bottom: 20px;
+}
+
 .hero {
   background: url('images/banner.jpg') center/cover no-repeat;
   height: 100vh;
