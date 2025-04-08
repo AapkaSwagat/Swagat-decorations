@@ -1,83 +1,88 @@
 
 body {
   margin: 0;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
   background: #fff;
   color: #333;
 }
-header {
-  background: linear-gradient(45deg, #ff4d4d, #ffa64d, #4dff88, #4d94ff, #b84dff);
-  padding: 20px;
-  text-align: center;
+
+.hero {
+  background: url('images/banner.jpg') center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
 }
-.logo {
-  width: 80px;
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
 }
-nav {
+
+.hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #ff1a1a;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background: #ff4081;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #f50057;
+}
+
+.about, .services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services .service-icons {
   display: flex;
   justify-content: center;
+  gap: 40px;
   flex-wrap: wrap;
-  background: #333;
 }
-nav a {
-  padding: 15px;
-  text-decoration: none;
-  color: white;
-  transition: 0.3s;
+
+.service {
+  max-width: 150px;
 }
-nav a:hover {
-  background: #ff69b4;
+
+.service img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
 }
-section {
-  padding: 30px;
-}
+
 footer {
   background: #333;
-  color: white;
+  color: #fff;
+  padding: 15px 0;
   text-align: center;
-  padding: 10px;
-}
-.hero {
-  background: #f9f9f9;
-  padding: 50px;
-  text-align: center;
-  animation: fadeIn 2s ease-in-out;
-}
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
-.gallery img {
-  width: 300px;
-  border-radius: 10px;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-input, textarea {
-  padding: 10px;
-  font-size: 1em;
-  width: 100%;
-  max-width: 500px;
-}
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px;
-  font-size: 1em;
-  border: none;
-  cursor: pointer;
-  width: 150px;
-}
-button:hover {
-  background-color: #45a049;
-}
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
